@@ -1,0 +1,33 @@
+{
+  "name": "frogwars-smartcontracts",
+  "version": "1.0.0",
+  "description": "Frog Wars game's smartcontracts",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmetson/frogwars-smartcontracts.git"
+  },
+  "keywords": [
+    "Ethereum",
+    "Linea",
+    "FrogWars",
+    "Crystal",
+    "WEF"
+  ],
+  "author": "Medet Ahmetson <ahmetson@zoho.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmetson/frogwars-smartcontracts/issues"
+  },
+  "homepage": "https://github.com/ahmetson/frogwars-smartcontracts#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
