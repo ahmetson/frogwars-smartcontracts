@@ -1,6 +1,12 @@
 # Requirements
 > On Windows it's running within the WSL.
 
+> CRYSTAL for payment
+> https://thirdweb.com/linea/0x21d624c846725ABe1e1e7d662E9fB274999009Aa
+
+> Leaderboard: https://lineascan.build/address/0xD189c9293141f9C28170d2fc5AbB42ae95125380#code
+> Lobby: https://lineascan.build/address/0x80Cbc1f7fd60B7026C0088e5eD58Fc6Ce1180141#code
+
 # Instructions
 1. Deploy Lobby
 2. Deploy Leaderboard
