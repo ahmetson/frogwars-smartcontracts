@@ -108,6 +108,10 @@ contract Lobby is AccessControl  {
 
     function isPlayerRegistered(address player) private view returns(bool) {
         uint256 index = playerDeposits[player];
+        // so that array out of bound doesn't throw
+        if (deposits.length == 0 || deposits.length < index + 1) {
+            return false;
+        }
         return deposits[index] != address(0);
     }
 
