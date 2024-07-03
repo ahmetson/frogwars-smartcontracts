@@ -5,7 +5,7 @@
 > https://thirdweb.com/linea/0x21d624c846725ABe1e1e7d662E9fB274999009Aa
 
 > Leaderboard: https://lineascan.build/address/0xD189c9293141f9C28170d2fc5AbB42ae95125380#code
-> Lobby: https://lineascan.build/address/0x80Cbc1f7fd60B7026C0088e5eD58Fc6Ce1180141#code
+> Lobby: https://lineascan.build/address/0x5d33B7a57eF9cbaBabe4e1B7EB7Ce2553a8f0980#code
 
 # Instructions
 1. Deploy Lobby
@@ -16,7 +16,7 @@
 6. Set the lobby on leaderboard.
 7. Set the server on lobby.
 
-# Sample Hardhat Project
+# Tasks
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
 
@@ -26,6 +26,21 @@ Try running some of the following tasks:
 npx hardhat help
 npx hardhat test
 REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
+npx hardhat ignition deploy ./ignition/modules/Lobby.ts --network linea
+npx hardhat verify --network linea <address> <deployer_address>
+```
+
+## Error Resolution
+Get list of deployment ids:
+
+```shell
+npx hardhat ignition deployments
+```
+
+According to Hardhat [documentation](https://hardhat.org/ignition/docs/guides/error-handling#wiping-a-previous-execution)
+
+Wipe the previous execution if the smartcontract was changed.
+
+```shell
+npx hardhat ignition wipe chain-59144 LobbyModule#Lobby
 ```
